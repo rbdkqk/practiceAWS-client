@@ -9,7 +9,7 @@ const GET_LIST_FAILURE = "GET_LIST_FAILUER";
 function getListAPI() {
   // return axios.get('http://localhost:3001/links');
   return axios.get(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/links"
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/links"
   );
 }
 

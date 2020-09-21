@@ -8,7 +8,7 @@ const POST_URL_FAILURE = "POST_URL_FAILUER";
 
 function postUrlAPI(data) {
   return axios.post(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/links",
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/links",
     data
   );
 }

@@ -10,7 +10,7 @@ axios.defaults.withCredentials = true; // ??
 
 function postSignupAPI(data) {
   return axios.post(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/user/signup",
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/user/signup",
     data
   );
 }

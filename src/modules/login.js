@@ -12,14 +12,14 @@ axios.defaults.withCredentials = true;
 
 function postLoginAPI(data) {
   return axios.post(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/user/signin",
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/user/signin",
     data
   );
 }
 
 function postLogoutAPI() {
   return axios.post(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/user/signout"
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/user/signout"
   );
 }
 

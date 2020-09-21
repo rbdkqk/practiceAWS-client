@@ -7,7 +7,10 @@ const POST_URL_SUCCESS = "POST_URL_SUCCESS";
 const POST_URL_FAILURE = "POST_URL_FAILUER";
 
 function postUrlAPI(data) {
-  return axios.post("http://3.20.232.121:13306/links", data);
+  return axios.post(
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/links",
+    data
+  );
 }
 
 const initialState = {

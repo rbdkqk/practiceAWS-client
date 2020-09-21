@@ -11,11 +11,16 @@ const LOGOUT = "LOGOUT";
 axios.defaults.withCredentials = true;
 
 function postLoginAPI(data) {
-  return axios.post("http://3.20.232.121:13306/user/signin", data);
+  return axios.post(
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/user/signin",
+    data
+  );
 }
 
 function postLogoutAPI() {
-  return axios.post("http://3.20.232.121:13306/user/signout");
+  return axios.post(
+    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com:13306/user/signout"
+  );
 }
 
 const initialState = {

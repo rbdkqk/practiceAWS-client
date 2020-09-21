@@ -9,10 +9,7 @@ const POST_SIGNUP_FAILURE = "POST_SIGNUP_FAILUER";
 axios.defaults.withCredentials = true; // ??
 
 function postSignupAPI(data) {
-  return axios.post(
-    "http://shortlyaws-client.s3-website.ap-northeast-2.amazonaws.com/user/signup",
-    data
-  );
+  return axios.post("http://3.20.232.121:13306/user/signup", data);
 }
 
 const initialState = {

@@ -7,7 +7,7 @@ const GET_LIST_SUCCESS = "GET_LIST_SUCCESS";
 const GET_LIST_FAILURE = "GET_LIST_FAILUER";
 
 function getListAPI() {
-  axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
+  // axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
   // return axios.get('http://localhost:3001/links');
   return axios.get("http://3.20.232.121:13306/links");
 }

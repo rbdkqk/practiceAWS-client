@@ -9,7 +9,7 @@ const POST_SIGNUP_FAILURE = "POST_SIGNUP_FAILUER";
 axios.defaults.withCredentials = true; // ??
 
 function postSignupAPI(data) {
-  axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
+  // axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
   return axios.post("http://3.20.232.121:13306/user/signup", data);
 }
 

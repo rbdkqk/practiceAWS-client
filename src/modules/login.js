@@ -11,10 +11,12 @@ const LOGOUT = "LOGOUT";
 axios.defaults.withCredentials = true;
 
 function postLoginAPI(data) {
+  axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
   return axios.post("http://3.20.232.121:13306/user/signin", data);
 }
 
 function postLogoutAPI() {
+  axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
   return axios.post("http://3.20.232.121:13306/user/signout");
 }
 

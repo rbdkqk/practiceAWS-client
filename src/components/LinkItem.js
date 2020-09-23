@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './LinkItem.css';
+import React, { Component } from "react";
+import "./LinkItem.css";
 
-const baseUrl = process.env.baseUrl || 'localhost:3001'
+const baseUrl = process.env.baseUrl || "3.20.232.121:13306";
 
 class LinkItem extends Component {
   render() {

@@ -7,6 +7,7 @@ const POST_URL_SUCCESS = "POST_URL_SUCCESS";
 const POST_URL_FAILURE = "POST_URL_FAILUER";
 
 function postUrlAPI(data) {
+  axios.defaults.withCredentials = false; // 이렇게 해야 해결 가능
   return axios.post("http://3.20.232.121:13306/links", data);
 }
 
